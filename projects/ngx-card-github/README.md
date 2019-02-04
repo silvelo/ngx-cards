@@ -1,24 +1,23 @@
 # NgxCardGithub
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
+Angular component to display your github profile.
 
-## Code scaffolding
+This package have a bootstrap dependencie and font-awesome. You should add this package and imports the styles to your angular.json
 
-Run `ng generate component component-name --project NgxCardGithub` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project NgxCardGithub`.
-> Note: Don't forget to add `--project NgxCardGithub` or else it will be added to the default project in your `angular.json` file. 
+## Usage
 
-## Build
+```
+import { NgxCardGithubModule } from "NgxCardGithubModule"
+...
+imports: [
+  NgxCardGithubModule
+]
+...
+```
 
-Run `ng build NgxCardGithub` to build the project. The build artifacts will be stored in the `dist/` directory.
+In your html use the component
 
-## Publishing
+```
+<ngx-card-github userId="YOUR STACKOVERFLOW ID OR USERNAME"></ngx-card-github>
 
-After building your library with `ng build NgxCardGithub`, go to the dist folder `cd dist/ngx-card-github` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test NgxCardGithub` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```

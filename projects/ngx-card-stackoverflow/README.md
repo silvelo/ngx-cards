@@ -1,6 +1,10 @@
 # NgxCardStackoverflow
 
-import package to your angular project.
+Angular component to display your stackoverflow profile.
+
+This package have a bootstrap dependencie. You should add this package and imports the styles to your angular.json
+
+## Usage
 
 ```
 import { NgxCardStackoverflowModule } from "NgxCardStackoverflowModule"
