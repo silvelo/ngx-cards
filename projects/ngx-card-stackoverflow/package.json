@@ -1,8 +1,25 @@
 {
   "name": "ngx-card-stackoverflow",
-  "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
-  }
+    "@angular/core": "^7.2.0",
+    "bootstrap": "^4.1.3"
+  },
+  "author": "Arturo Silvelo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silvelo/ngx-cards.git"
+  },
+  "bugs": {
+    "url": "https://github.com/silvelo/ngx-cards/issues"
+  },
+  "homepage": "https://github.com/silvelo/ngx-cards",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "card",
+    "profile",
+    "stackoverflow"
+  ]
 }

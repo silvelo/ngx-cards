@@ -2,6 +2,8 @@
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/ngx-card-stackoverflow",
   "lib": {
-    "entryFile": "src/public_api.ts"
+    "entryFile": "src/public_api.ts",
+    "styleIncludePaths": ["../../src/assets/img"],
+    "cssUrl": "inline"
   }
 }
