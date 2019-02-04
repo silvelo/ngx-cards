@@ -24,6 +24,12 @@
       ],
       "ngx-card-github/*": [
         "dist/ngx-card-github/*"
+      ],
+      "ngx-card-stackoverflow": [
+        "dist/ngx-card-stackoverflow"
+      ],
+      "ngx-card-stackoverflow/*": [
+        "dist/ngx-card-stackoverflow/*"
       ]
     }
   }

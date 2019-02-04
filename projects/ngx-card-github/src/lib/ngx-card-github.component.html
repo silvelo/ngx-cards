@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div class="card m-3 shadow-sm" (click)="goTo(userData?.html_url)">
+        <div class="card-body">
+          <div class="row">
+            <img src="../../../assets/img/github.png" />
+
+            <h3 class="font-weight-bolder text-center flex-grow-1">
+              {{ userData?.login }}
+            </h3>
+          </div>
+          <hr />
+
+          <ngx-card-github-content
+            [followers]="userData?.followers"
+            [repos]="userData?.public_repos"
+            [stars]="totalStars"
+          ></ngx-card-github-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

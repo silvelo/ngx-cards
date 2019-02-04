@@ -169,6 +169,41 @@
           }
         }
       }
+    },
+    "NgxCardStackoverflow": {
+      "root": "projects/ngx-card-stackoverflow",
+      "sourceRoot": "projects/ngx-card-stackoverflow/src",
+      "projectType": "library",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-card-stackoverflow/tsconfig.lib.json",
+            "project": "projects/ngx-card-stackoverflow/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-card-stackoverflow/src/test.ts",
+            "tsConfig": "projects/ngx-card-stackoverflow/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-card-stackoverflow/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-card-stackoverflow/tsconfig.lib.json",
+              "projects/ngx-card-stackoverflow/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "NgxCards"
