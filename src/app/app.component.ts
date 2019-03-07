@@ -10,7 +10,7 @@ export class AppComponent {
   stackoverflow = '';
 
   githubUser = '';
-  stackoverflowUser = '5609909';
+  stackoverflowUser = '';
 
   setStackOverflow() {
     this.stackoverflowUser = this.stackoverflow;

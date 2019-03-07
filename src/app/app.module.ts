@@ -1,5 +1,5 @@
-import { NgxCardStackoverflowModule } from 'ngx-card-stackoverflow/ngx-card-stackoverflow.module';
-import { NgxCardGithubModule } from 'ngx-card-github/ngx-card-github.module';
+import { NgxCardStackoverflowModule } from 'ngx-card-stackoverflow';
+import { NgxCardGithubModule } from 'ngx-card-github';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';

@@ -1,21 +1,15 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="card m-3 shadow-sm" (click)="goTo(userData?.link)">
-        <div class="card-body">
-          <ngx-card-stackoverflow-header
-            [name]="userData?.display_name"
-          ></ngx-card-stackoverflow-header>
-          <hr />
-          <ngx-card-stackoverflow-reputation
-            [reputation]="userData?.reputation"
-          ></ngx-card-stackoverflow-reputation>
-          <hr />
-          <ngx-card-stackoverflow-badges
-            [badges]="userData?.badge_counts"
-          ></ngx-card-stackoverflow-badges>
-        </div>
-      </div>
-    </div>
+<div class="card shadow-sm" (click)="goTo(userData?.link)">
+  <div class="card-body">
+    <ngx-card-stackoverflow-header
+      [name]="userData?.display_name"
+    ></ngx-card-stackoverflow-header>
+    <hr />
+    <ngx-card-stackoverflow-reputation
+      [reputation]="userData?.reputation"
+    ></ngx-card-stackoverflow-reputation>
+    <hr />
+    <ngx-card-stackoverflow-badges
+      [badges]="userData?.badge_counts"
+    ></ngx-card-stackoverflow-badges>
   </div>
 </div>

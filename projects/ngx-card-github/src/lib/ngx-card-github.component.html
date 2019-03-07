@@ -1,20 +1,12 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="card m-3 shadow-sm" (click)="goTo(userData?.html_url)">
-        <div class="card-body">
-          <ngx-card-github-header
-            [name]="userData?.login"
-          ></ngx-card-github-header>
-          <hr />
+<div class="card shadow-sm" (click)="goTo(userData?.html_url)">
+  <div class="card-body">
+    <ngx-card-github-header [name]="userData?.login"></ngx-card-github-header>
+    <hr />
 
-          <ngx-card-github-content
-            [followers]="userData?.followers"
-            [repos]="userData?.public_repos"
-            [stars]="totalStars"
-          ></ngx-card-github-content>
-        </div>
-      </div>
-    </div>
+    <ngx-card-github-content
+      [followers]="userData?.followers"
+      [repos]="userData?.public_repos"
+      [stars]="totalStars"
+    ></ngx-card-github-content>
   </div>
 </div>
