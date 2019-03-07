@@ -3,6 +3,9 @@
   "dest": "../../dist/ngx-card-github",
   "lib": {
     "entryFile": "src/public_api.ts",
+    "styleIncludePaths": [
+      "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    ],
     "cssUrl": "inline"
   }
 }

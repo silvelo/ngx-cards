@@ -3,13 +3,9 @@
     <div class="col">
       <div class="card m-3 shadow-sm" (click)="goTo(userData?.html_url)">
         <div class="card-body">
-          <div class="row">
-            <div class="logo"></div>
-
-            <h3 class="font-weight-bolder text-center flex-grow-1">
-              {{ userData?.login }}
-            </h3>
-          </div>
+          <ngx-card-github-header
+            [name]="userData?.login"
+          ></ngx-card-github-header>
           <hr />
 
           <ngx-card-github-content

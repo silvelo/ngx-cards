@@ -3,13 +3,9 @@
     <div class="col">
       <div class="card m-3 shadow-sm" (click)="goTo(userData?.link)">
         <div class="card-body">
-          <div class="row">
-            <div class="logo"></div>
-
-            <h3 class="font-weight-bolder text-center flex-grow-1">
-              {{ userData?.display_name }}
-            </h3>
-          </div>
+          <ngx-card-stackoverflow-header
+            [name]="userData?.display_name"
+          ></ngx-card-stackoverflow-header>
           <hr />
           <ngx-card-stackoverflow-reputation
             [reputation]="userData?.reputation"
