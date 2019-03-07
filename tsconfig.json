@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "outDir": "./www",
     "sourceMap": true,
     "declaration": false,
     "module": "es2015",
@@ -11,26 +11,13 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom"],
     "paths": {
-      "ngx-card-github": [
-        "dist/ngx-card-github"
-      ],
-      "ngx-card-github/*": [
-        "dist/ngx-card-github/*"
-      ],
-      "ngx-card-stackoverflow": [
-        "dist/ngx-card-stackoverflow"
-      ],
-      "ngx-card-stackoverflow/*": [
-        "dist/ngx-card-stackoverflow/*"
-      ]
+      "ngx-card-github": ["projects/ngx-card-github/src/lib/"],
+      "ngx-card-github/*": ["projects/ngx-card-github/src/lib/*"],
+      "ngx-card-stackoverflow": ["projects/ngx-card-stackoverflow/src/lib/"],
+      "ngx-card-stackoverflow/*": ["projects/ngx-card-stackoverflow/src/lib/*"]
     }
   }
 }
