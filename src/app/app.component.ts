@@ -5,4 +5,17 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {}
+export class AppComponent {
+  github = '';
+  stackoverflow = '';
+
+  githubUser = '';
+  stackoverflowUser = '';
+
+  setStackOverflow() {
+    this.stackoverflowUser = this.stackoverflow;
+  }
+  setGithub() {
+    this.githubUser = this.github;
+  }
+}

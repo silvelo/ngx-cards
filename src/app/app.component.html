@@ -1,3 +1,37 @@
-<ngx-card-github userId="silvelo"></ngx-card-github>
+<div class="container m-2">
+  <form class="form-inline">
+    <div class="form-group mb-2">
+      <label for="githubUser">Github User</label>
+      <input
+        type="text"
+        class="form-control mx-2"
+        id="githubUser"
+        [(ngModel)]="github"
+        name="github"
+      />
+    </div>
+    <button class="mx-2 btn btn-primary" (click)="setGithub()">
+      Submit
+    </button>
+  </form>
+  <ngx-card-github [userId]="githubUser"></ngx-card-github>
 
-<ngx-card-stackoverflow userId="5609909"></ngx-card-stackoverflow>
+  <form class="form-inline">
+    <div class="form-group mb-2">
+      <label for="stackoverflowUser">Stackoverflow User</label>
+      <input
+        type="text"
+        class="form-control mx-2"
+        id="stackoverflowUser"
+        [(ngModel)]="stackoverflow"
+        name="stackoverflow"
+      />
+    </div>
+
+    <button class="btn btn-primary mx-2" (click)="setStackOverflow()">
+      Submit
+    </button>
+  </form>
+
+  <ngx-card-stackoverflow [userId]="stackoverflowUser"></ngx-card-stackoverflow>
+</div>
