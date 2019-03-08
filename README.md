@@ -9,4 +9,4 @@ Support:
 
 # Demo
 
-https://silvelo.github.com/ngx-cards/
+https://silvelo.github.io/ngx-cards/
